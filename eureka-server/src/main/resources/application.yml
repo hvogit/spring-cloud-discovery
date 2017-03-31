@@ -1,0 +1,11 @@
+spring.application.name: eureka-server
+server.port: ${port:8761}
+eureka:
+#  instance:
+#    statusPageUrlPath: ${management.contextPath}/info
+#    healthCheckUrlPath: ${management.contextPath}/health
+#    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+#    serviceUrl.defaultZone: http://localhost:8012/eureka,http://localhost:8013/eureka

@@ -1,0 +1,4 @@
+spring.application.name: ${app-name:subject}
+server.port: ${port:8021}
+eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
+names: Mommy,Daddy,Theresa

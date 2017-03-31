@@ -1,0 +1,2 @@
+spring.application.name: consumer
+server.port: ${port:8020}
