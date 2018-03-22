@@ -10,10 +10,15 @@ public class Controller {
     @Value("${names}")
     private String[] names;
 
+
+    @Value("${server.port}")
+    private Integer port;
+
+
     @RequestMapping("/name")
     public String getName() {
         int i = (int) Math.round(Math.random() * (names.length - 1));
-        return names[i];
+        return port + ":" + names[i];  // to know which instance
     }
 
     @RequestMapping("/names")

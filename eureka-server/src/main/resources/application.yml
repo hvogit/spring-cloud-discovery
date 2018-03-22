@@ -6,6 +6,6 @@ eureka:
 #    healthCheckUrlPath: ${management.contextPath}/health
 #    hostname: localhost
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: false
 #    serviceUrl.defaultZone: http://localhost:8012/eureka,http://localhost:8013/eureka
