@@ -1,2 +1,8 @@
 spring.application.name: consumer
 server.port: ${port:8020}
+
+# config actuator endpoints
+
+info.app.name: ${spring.application.name}
+info.app.description: consumer app
+info.app.version: 1.0.0
